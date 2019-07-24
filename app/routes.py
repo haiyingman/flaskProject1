@@ -12,7 +12,7 @@ def tipAmount():
          return "You did not fill out the form"
     else:
         userData = dict(request.form)
-        billAmount = userData['billAmount'][0]
-        percent = userData['percent'][0]
+        billAmount = userData['billAmount']
+        percent = userData['percent']
         tipNum = model.tip(percent, billAmount)
         return render_template("tipAmount.html", billAmount = billAmount, percent = percent, tipNum = tipNum)
