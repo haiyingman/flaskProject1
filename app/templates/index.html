@@ -1,13 +1,16 @@
 <html>
     <head>
-        <title>Welcome!</title>
+        <title>Welcome to Bill Splitter! </title>
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" value="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
+        <h1>We take your restaurant bill and offer different tipping options.</h1>
+        <p>Let's get tipping.</p>
+        <form method="post" action="/tipAmount">
+            <label for="billAmount">What was your total bill amount?</label>
+            <input type ='text' name='billAmount'>
+            <label for="percent">What percent tip would you like to give?</label>
+            <input type='text' name='percent'/> 
+            <input type='submit'>
         </form>
     </body>
 </html>
